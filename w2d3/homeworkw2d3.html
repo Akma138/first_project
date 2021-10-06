@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>AquaPals</title>
+    <link href="https://fonts.googleapis.com/css?family=Slackey" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <style>
+     *, *:after, *:before {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-size: 16px;
+    }
+    
+    .container {
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 1em;
+    }
+    
+    .flex-column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header {
+      margin-bottom: 6em;
+    }
+    
+    .wordmark {
+      font-size: 8em;
+      font-family: 'Slackey', cursive;
+      color: white;
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: #21698F;
+      margin: 0;
+    }
+    
+    .main-heading {
+      font-size: 4em;
+      margin: 0 0 .25em 0;
+    }
+    
+    .fish-list {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    
+    .fish-list-card {
+      width: 31.33%;
+      margin: 0 1%;
+      border-radius: .5em;
+      margin-bottom: 2em;
+      overflow: hidden;
+    }
+    
+    .fish-list-card-name {
+      margin: 1em 0;
+      text-align: center;
+    }
+    
+    .fish-list-card-image {
+      width: 100%;
+    }
+    
+    .blue {
+      background-color: #ACD7EE;
+      color: #21698F;
+    }
+    
+    .light {
+      background-color: white;
+      color: #21698F;
+    }
+  </style>
+  <body id="body" class="blue">
+    <input type="text" placeholder="Описание" id="input">
+    <button type="button" onclick="getInputValue();">get Value</button>
+
+    <script>
+      function getInputValue(){
+        let inputVal = document.getElementById("input").value;
+        alert(inputVal); 
+      }
+    </script>
+
+<input type ="color" id="myColor">
+<button onclick="myFunction()">Try it</button>
+<script>
+  function myFunction() {
+    document.getElementById("myColor").value = "#FF8040";
+  }
+  </script>
+   
+    <header class="container flex-column header">
+      <h1 id="wordmark" class="wordmark">AquaPals</h1>
+      <span id="address" class="header-address">
+        1234 Main Street, Toledo, Ohio 43615
+      </span>
+    </header>
+    <main id="main" class="container flex-column">
+      <h1 class="main-heading">Fish for Sale</h1>
+      <ul id="fish-list" class="fish-list">
+        <li id="fish-1" class="fish-list-card flex-column light">
+          <img src="file:///home/user/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/w2d3/black-bandit-angelfish.jpg" class="fish-list-card-image" alt="fish pic">
+          <span class="fish-list-card-name">
+            Black Bandit Angelfish
+          </span>
+          <p id="demo"></p>
+          <!-- <button type="button" onclick='document.getElementById("demo").innerHTML= "Куплено"'>Купить</button> -->
+          <button type="button" onclick="alert('Куплено')">Купить</button>
+        </li>
+        <li id="fish-2" class="fish-list-card flex-column light">
+          <img src="file:///home/user/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/w2d3/mitratus-butterflyfish.jpg" class="fish-list-card-image" alt="fish pic">
+          <span class="fish-list-card-name">
+            Mitratus Butterflyfish
+          </span>
+          <button type="button"></button>
+          <p id="demo"></p>
+          <!-- <button type="button" onclick='document.getElementById("demo").innerHTML= "Куплено"'>Купить</button> -->
+          <button type="button" onclick="alert('Mitratus Butterflyfish')">Купить</button>
+        </li>
+        <li id="fish-3" class="fish-list-card flex-column light">
+          <img src="file:///home/user/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/w2d3/catalina-goby.jpg" class="fish-list-card-image" alt="fish pic">
+          <span class="fish-list-card-name">
+            Catalina Goby
+          </span>
+          <button type="button"></button>
+          <p id="demo"></p>
+          <!-- <button type="button" onclick='document.getElementById("demo").innerHTML= "Куплено"'>Купить</button> -->
+          <button type="button" onclick="alert('Catalina Goby')">Купить</button>
+        </li>
+        <li id="fish-4" class="fish-list-card flex-column light">
+          <img src="file:///home/user/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/w2d3/blood-red-hawkfish.jpg" class="fish-list-card-image" alt="fish pic">
+          <span class="fish-list-card-name">
+            Blood Red Hawkfish
+          </span>
+          <button type="button"></button>
+          <p id="demo"></p>
+          <!-- <button type="button" onclick='document.getElementById("demo").innerHTML= "Куплено"'>Купить</button> -->
+          <button type="button" onclick="alert('Blood Red Hawkfish')">Купить</button>
+        </li>
+        <li id="fish-5" class="fish-list-card flex-column light">
+          <img src="file:///home/user/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/w2d3/akindynos-clownfish.jpg" class="fish-list-card-image" alt="fish pic">
+          <span class="fish-list-card-name">
+            Akindynos Clownfish
+          </span>
+          <button type="button"></button>
+          <p id="demo"></p>
+          <!-- <button type="button" onclick='document.getElementById("demo").innerHTML= "Куплено"'>Купить</button> -->
+          <button type="button" onclick="alert('Akindynos Clownfish')">Купить</button>
+        </li>
+        <li id="fish-6" class="fish-list-card flex-column light">
+          <img src="file:///home/user/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/w2d3/coral-hogfish.jpg" class="fish-list-card-image" alt="fish pic">
+          <span class="fish-list-card-name">
+            Coral Hogfish
+          </span>
+          <button type="button"></button>
+          <p id="demo"></p>
+          <!-- <button type="button" onclick='document.getElementById("demo").innerHTML= "Куплено"'>Купить</button> -->
+          <button type="button" onclick="alert('Akindynos Clownfish')">Купить</button>
+        </li>
+        <li id="fish-7" class="fish-list-card flex-column light">
+          <img src="file:///home/user/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/w2d3/fu-manchu-lionfish.jpg" class="fish-list-card-image" alt="fish pic">
+          <span class="fish-list-card-name">
+            Fu Manchu Lionfish
+          </span> 
+          <button type="button"></button>
+          <p id="demo"></p>
+          <!-- <button type="button" onclick='document.getElementById("demo").innerHTML= "Куплено"'>Купить</button> -->
+          <button type="button" onclick="alert('Akindynos Clownfish')">Купить</button>
+        </li>
+        <li id="fish-8" class="fish-list-card flex-column light">
+          <img src="file:///home/user/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/w2d3/white-tiger-goby.jpg" class="fish-list-card-image" alt="fish pic">
+          <span class="fish-list-card-name">
+            White Tiger Goby
+          </span>
+          <button type="button"></button>
+          <p id="demo"></p>
+          <!-- <button type="button" onclick='document.getElementById("demo").innerHTML= "Куплено"'>Купить</button> -->
+          <button type="button" onclick="alert('Akindynos Clownfish')">Купить</button>
+        </li>
+        <li id="fish-8" class="fish-list-card flex-column light">
+          <img src="file:///home/user/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/w2d3/green-wrasse.jpg" class="fish-list-card-image" alt="fish pic">
+          <span class="fish-list-card-name">
+            Green-wrasse
+          </span>
+          <button type="button"></button>
+          <p id="demo"></p>
+          <!-- <button type="button" onclick='document.getElementById("demo").innerHTML= "Куплено"'>Купить</button> -->
+          <button type="button" onclick="alert('green-wrasse')">Купить</button>
+        </li>
+      </ul>
+    </main>
+    </script>
+  </body>
+</html>
