@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <link rel="stylesheet" type = "html/css" href="w2d4div {.css">
+  
+</head>
+<body>
+  <script type="text/javascript">
+    let arr = []
+    function insert() {
+    let nameinput = document.getElementById("name").value;
+    let messageBox = document.getElementById("display");
+      arr.push(nameinput)
+      messageBox.innerHTML = arr;
+      document.getElementById("name").value = ""
+    } 
+</script>
+  <div id="content">
+    <p id="paragraph" style="text-align: center; border: 10px solid #FF00FF; background-color: #EE82EE;">СЛОВАРИК</p>
+    
+  
+  
+  <link rel="stylesheet" type="text/css" href="w2d4projectNEW.html">
+
+<script>
+ sessionStorage.getItem('key');
+</script>
+</div>
+Слово: <input id="name" type="text" name="name" value="" size="25" maxlength="50" />
+<input type="button" value="Добавить в словарь" onclick="insert();" />
+<br>
+<br>
+Словарь: <span id="display">      </span>
+
+</body>
+</html>
