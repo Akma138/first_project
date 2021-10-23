@@ -1,0 +1,18 @@
+.mountains{
+  position: relative; 
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  
+}
+.climber {
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  background: scr="mountains.jpg"; 
+  padding: 10px;
+  border-radius: 10px;
+  z-index: 10; // 
+}
