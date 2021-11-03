@@ -29,14 +29,14 @@ const database = [
     name: 'Homer Simpson',
     bio: `Homer Jay Simpson is a fictional character and the protagonist 
     of the American animated sitcom The Simpsons.`,
-    path: 'file:///home/user/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/CartoonProject/simpson.png'
+    path: 'simpson.png'
     
   },
   {
     name: 'Stormtrooper',
     bio: `Stormtroopers, nicknamed "bucketheads"
      and—after the Battle of Endor—Remnant Stormtroopers.`,
-    path: 'file:///home/user/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/CartoonProject/stormtrooper.png'
+    path: 'stormtrooper.png'
   }
 ]
 
