@@ -1,0 +1,18 @@
+#mainBody {
+  background-color: lightblue;
+  margin:0px auto; 
+  display:block;
+}
+#result {
+  background-color: lightblue;
+  margin:0px auto; 
+  display:block; 
+  width:500px;	
+}
+
+#inner {
+ background-color: lightblue;
+  margin:0px auto; 
+  display:block; 
+  width:400px;	
+}

@@ -1,0 +1,49 @@
+function digitize(num) {
+var num = 348597,
+    arr = String(num).split("").reverse().map(Number);
+}
+console.log(arr);
+
+
+// var no = "12 13 14 15";
+// var noV = no.split(" ");
+// console.log(noV);
+
+вот так работает
+var num = 348597,
+    arr = String(num).split("").reverse().map(Number);
+
+console.log(arr);
+
+фибоначи. алгоритмы
+
+переводит строку в аррэй и пере
+function digitize(n) {
+  var initialArray = (""+n).split('');
+  var reversedArray = [];
+  for (var i = initialArray.length - 1; i >= 0; i--) {
+    reversedArray[i] = parseInt(initialArray.shift(),10);
+  }
+  return reversedArray;
+}
+
+console.log(digitize(348597));
+
+
+// function digitize(num) {
+//   var num = 348597,
+//     arr = String(num).split("").reverse().map(Number);
+//     return arr;
+// }
+// console.log(digitize(arr));
+
+
+// var num = 348597,
+//     arr = String(num).split("").reverse().map(Number);
+//     console.log(arr);
+    
+    var digitize = (num) => {
+    var arr = String(num).split("").reverse().map(Number);
+    return arr;
+}
+console.log(digitize(3423432));
